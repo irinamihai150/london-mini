@@ -14,9 +14,9 @@ app.use("/colleges", collegesRoute);
 app.use("/doctors", doctorsRoute);
 app.use("/hospitals", hospitalsRoute);
 
-// app.get("/", function (request, response) {
-//   response.sendFile(__dirname + "/index.html");
-// });
+app.get("/", function (request, response) {
+  response.sendFile(__dirname + "/index.html");
+});
 
 // app.listen(3000, function () {
 //   console.log("Server is listening on port 3000. Ready to accept requests!");
