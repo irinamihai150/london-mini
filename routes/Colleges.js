@@ -5,15 +5,15 @@ const Harrow = require("../data/Harrow.json");
 const Heathrow = require("../data/Heathrow.json");
 
 router.get("/", (req, res) => {
-  let colleges = Stratford[Object.keys(Stratford)[2]];
-  res.send(colleges);
+  let collegesStratford = Stratford[Object.keys(Stratford)[2]];
+  res.send(collegesStratford);
 });
 router.get("/Harrow", (req, res) => {
-  let colleges = Harrow[Object.keys(Harrow)[2]];
-  res.send(colleges);
+  let collegesHarrow = Harrow[Object.keys(Harrow)[2]];
+  res.send(collegesHarrow);
 });
 router.get("/Heathrow", (req, res) => {
-  let colleges = Heathrow[Object.keys(Heathrow)[2]];
-  res.send(colleges);
+  let collegesHeathrow = Heathrow[Object.keys(Heathrow)[2]];
+  res.send(collegesHeathrow);
 });
 module.exports = router;
