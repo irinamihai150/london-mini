@@ -1,6 +1,5 @@
 const express = require("express");
 const cors = require("cors");
-app.use(cors());
 
 const app = express();
 const pharmacyRoute = require("./routes/Pharmacies.js");
@@ -9,6 +8,7 @@ const doctorsRoute = require("./routes/Doctors.js");
 const hospitalsRoute = require("./routes/Hospitals.js");
 
 app.use(express.json());
+app.use(cors());
 app.use("/pharmacies", pharmacyRoute);
 app.use("/colleges", collegesRoute);
 app.use("/doctors", doctorsRoute);
