@@ -5,7 +5,7 @@ const Stratford = require("../data/Stratford.json");
 const Harrow = require("../data/Harrow.json");
 const Heathrow = require("../data/Heathrow.json");
 
-router.get("/", (req, res) => {
+router.get("/Stratford", (req, res) => {
   let pharmaciesStratford = Stratford[Object.keys(Stratford)[0]];
   res.send(pharmaciesStratford);
 });
